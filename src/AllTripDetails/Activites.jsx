@@ -20,7 +20,7 @@ function Activites(props) {
             />
             <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-1 px-2">
               {each.activities.map((trip, index1) => (
-                <Link to ={`https://www.google.com/maps/search/?api=1&query=${trip.hotelName}`} target ="_blank">
+                <Link to ={`https://www.google.com/maps/search/?api=1&query=${trip.placeName}`} target ="_blank">
                 <div
                   key={index1}
                   className="shadow-sm hover:shadow-2xl cursor-pointer border border-slate-500 rounded-md px-2 py-2"

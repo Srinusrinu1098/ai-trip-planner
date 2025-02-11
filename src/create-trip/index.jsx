@@ -76,6 +76,7 @@ function CreateTrip() {
       close(true);
       return;
     } else {
+      toast("please wait... we are working on it....");
       setLoading(true)
       const finalPromt = actualPromt
         .replace("{location}", datas.location)
@@ -96,6 +97,7 @@ function CreateTrip() {
   };
 
   const saveAiTrip = async (TripData) => {
+    
   
     setLoading(true);
     const user = JSON.parse(localStorage.getItem("user"));
@@ -219,7 +221,7 @@ function CreateTrip() {
                   <h2 className="sm:font-thin md:font-medium lg:font-bold font-serif text-center">
                     {each.people}
                   </h2>
-                  <p className="sm:text-[12px] md:text-[4px] lg:text-[3px] text-[2px] text-gray-400 font-mono text-center">
+                  <p className="sm:text-[22px] md:text-[14px] lg:text-[13px] text-[12px] text-gray-400 font-mono text-center">
                     {each.discription}
                   </p>
                 </li>
@@ -241,7 +243,7 @@ function CreateTrip() {
                   <h2 className="sm:font-thin md:font-medium lg:font-bold font-serif text-center">
                     {each.people}
                   </h2>
-                  <p className="sm:text-[12px] md:text-[4px] lg:text-[3px] text-[2px] text-gray-400 font-mono text-center">
+                  <p className="sm:text-[22px] md:text-[14px] lg:text-[13px] text-[12px] text-gray-400 font-mono text-center">
                     {each.discription}
                   </p>
                 </li>
